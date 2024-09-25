@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XYZ Cricket Tournament Schedule</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>XYZ Cricket Tournament Schedule</h1>
+        <button id="register-btn" onclick="window.location.href='../Registration/reg.html'">Register Now</button>
+        <p>Join us for an exciting series of matches!</p>
+    </header>
+
+    <main>
+        <section class="team-overview">
+            <h2 style="color: black;">Participating Teams</h2>
+            <div class="teams" id="team-list"></div>
+        </section>
+        <section class="match-schedule">
+            <h2 style="color: black;">Match Schedule</h2>
+            <div id="schedule" class="schedule-grid"></div>
+        </section>
+    </main>
+    <footer>
+        <p><center>&copy; 2024 XYZ Organization. All rights reserved.</center></p>
+    </footer>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close" id="close">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-details"></p>
+        </div>
+    </div>
+
+    <div class="modal" id="register-modal">
+        <div class="modal-content">
+            <span class="close" id="close-register">&times;</span>
+            <h3>Register for the Tournament</h3>
+            <form id="registration-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                
+                <label for="team">Team:</label>
+                <input type="text" id="team" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="modal" id="team-modal">
+        <div class="modal-content">
+            <span class="close" id="close-team">&times;</span>
+            <h3 id="team-modal-title"></h3>
+            <p id="team-members"></p>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
