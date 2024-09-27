@@ -40,6 +40,7 @@ video{
 #main{
     position: relative;
     background-color: rgba(0, 0, 0, 0.599);
+overflow: hidden;
 }
 #page1{
     height: 100vh;
